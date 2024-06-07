@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(112, 108, 182);
+        background: linear-gradient(90deg, rgba(112, 108, 182, 1) 0%, rgba(160, 165, 209, 1) 37%, rgba(119, 148, 187, 1) 52%, rgba(136, 169, 209, 1) 72%, rgba(0, 212, 255, 1) 91%);
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #CCC1E7;
+}
+.list ul{
+    display: flex;
+    gap: 3rem;
+    margin: 20px;
+}
+.list-items{
+   text-decoration: none;
+   list-style-type: none;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #291068;
+    font-weight: 800;
+}
+.head-container{
+    text-align: center;
+    box-shadow: 10px 10px 10px gray;
+}
+.logo{
+        padding: 10px;
+        font-family: "Tiny5", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #291068;
+        /* filter: drop-shadow(2px 2px 0px);
+        -webkit-filter: drop-shadow(2px 2px 0px); */
+        background-color: #ae96ed;
+        border-radius:10px;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        -ms-border-radius:10px;
+        -o-border-radius:10px;
+}
+ul a:hover{
+    background-color: #8c5ff6;
+    color: rgb(252, 87, 87);
+}
+section{
+    display: flex;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+footer div div a{
+color: white;
+margin: 20px;
+}
+ul a{
+    background-color: #ae96ed;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media(width<800px){
+    img{
+        height: 600px;
+        width: 380px;
+    }
+    .right-content{
+        visibility: hidden;
+    }
+        footer div div a {
+            margin: 10px;
+        }
+                .list ul {
+                    gap: 1rem;
+                    margin: 10px;
+                }
+                .link {
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+                                .logo {
+                                    padding: 5px;
+                                    font-weight: 200;
+                                    font-size: 10px;
+                                }
+                                body{
+                                    height: 100vh;
+                                    width: 100vw;
+                                }
+}
